@@ -34,7 +34,91 @@
           </div>
         </div>
       </div>
-      <main></main>
+      <main>
+        <p class="motivation">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started!
+        </p>
+        <p class="motivation">You <em>know</em> you want to.</p>
+        <form method="post" action="" id="signup-form">
+          <p class="motivation">Let's do this!</p>
+          <div class="form-row">
+            <div class="form-control">
+              <label for="first-name">FIRST NAME</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                pattern="([A-Za-z]+\s)*[A-Za-z]+"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="last-name">LAST NAME</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                pattern="([A-Za-z]+\s)*[A-Za-z]+"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-control">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                inputmode="email"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input
+                type="tel"
+                id="phone-number"
+                inputmode="tel"
+                name="phone-number"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-control">
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                maxlength="100"
+                required
+              />
+              <!-- see this article for perspective on maxlength for passwords https://dev.to/mitchpommers/password-max-length-limits-are-dumb-but-we-need-them-1dpp -->
+            </div>
+            <div class="form-control">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                minlength="8"
+                maxlength="100"
+                required
+              />
+            </div>
+          </div>
+        </form>
+        <div class="form-control" id="submit-button">
+          <button type="submit" form="signup-form">Create Account</button>
+        </div>
+        <div id="login-prompt">
+          Already have an account? <a href="#">Log in</a>
+        </div>
+      </main>
     </div>
   </body>
 </html>
