@@ -20,10 +20,10 @@ body {
 }
 #main-container {
   display: flex;
-  width: calc(100vw - 600px);
+  width: calc(100vw - 400px);
 }
 #background-image-container {
-  width: 500px;
+  width: 600px;
   background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,8 +80,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  color: white;
+  color: whitesmoke;
   text-align: center;
+  font-size: small;
+  margin-bottom: 15px;
 }
 #credits-container a {
   color: white;
@@ -93,7 +95,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap: 25px;
   background-color: ghostwhite;
 }
 .motivation {
@@ -124,7 +126,11 @@ form > p {
   margin-bottom: 25px;
 }
 form input {
-  width: 200px;
+  width: 250px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 1.2em;
+  padding: 4px;
 }
 @font-face {
   font-family: "open_sansbold";
@@ -167,13 +173,14 @@ form label {
   outline: 1px solid red;
 } */
 button {
-  padding: 15px 30px;
+  padding: 10px 40px;
   background-color: darkgreen;
   color: white;
-  font-weight: bold;
+  font-weight: 550;
   letter-spacing: 1px;
   border-radius: 8px;
   font-size: 1.05rem;
+  border: none;
 }
 #login-prompt {
   font-weight: 500;
@@ -183,3 +190,46 @@ button {
   color: gray;
   font-weight: bold;
 }
+/* @font-face {
+  font-family: "robotoregular";
+  src: url("roboto-regular-webfont.woff2") format("woff2"),
+    url("roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewayregular";
+  src: url("raleway-regular-webfont.woff2") format("woff2"),
+    url("raleway-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#login-prompt {
+  font-family: "ralewayregular";
+  font-weight: bold;
+} */
+
+/* now styles related to invalid and valid states are starting */
+input:invalid {
+  outline: 1px solid red;
+}
+input:valid {
+  outline: 1px solid green;
+}
+/* now styles related to labeling required attribute are starting */
+.form-control {
+  position: relative;
+}
+.form-control label {
+  margin-bottom: 10px;
+}
+.form-control:has(> input:required) span::before {
+  background-color: black;
+  color: white;
+  content: "required";
+  position: absolute;
+  top: 0;
+  right: 50px;
+  padding: 2px;
+}
+/* now styles related to tick or cross marks upon input validation are starting */
