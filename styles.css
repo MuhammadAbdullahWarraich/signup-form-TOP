@@ -268,3 +268,10 @@ input:hover {
 p.motivation {
   max-width: 80%;
 }
+/* visual effect upon focusing on form element */
+.form-control {
+  transition: transform 300ms;
+}
+.form-control:has(input:focus) {
+  transform: scale(1.1);
+}
