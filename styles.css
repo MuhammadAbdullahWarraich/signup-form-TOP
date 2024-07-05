@@ -34,7 +34,15 @@ main {
   background-color: gray;
   width: 1000px;
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1550px) {
+  body {
+    height: fit-content;
+  }
+  .motivation {
+    margin-top: 50px;
+    width: inherit;
+    padding-right: 20px;
+  }
   #background-image-container {
     display: none;
   }
@@ -42,6 +50,20 @@ main {
     width: 100vw;
     justify-content: center;
   }
+  body {
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  main {
+    width: inherit;
+  }
+  body {
+    display: block;
+  }
+  /* .motivation {
+    display: none;
+  } */
 }
 #background-image-container a:has(> #logo-image-container) {
   /* these rules remove all styling from selected <a> element */
@@ -102,13 +124,14 @@ main {
   font-weight: bold;
   font-size: 1.3em;
 }
-.motivation,
-.form-row {
+.motivation {
   width: 640px;
 }
-
+.form-control {
+  width: 300px;
+}
 .motivation,
-.form-row,
+.form-control,
 #submit-button,
 #login-prompt {
   margin-left: 50px;
@@ -159,21 +182,14 @@ form label {
   font-family: "open_sansbold";
   letter-spacing: 3px;
 }
-.form-row {
-  margin-bottom: 20px;
-  width: 600px;
+form {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .form-control {
+  margin-bottom: 20px;
   width: 300px;
-}
-@media only screen and (max-width: 1250) {
-  .form-row {
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
-  }
 }
 /* * {
   outline: 1px solid red;
@@ -190,6 +206,7 @@ button {
 }
 #login-prompt {
   font-weight: 500;
+  margin-bottom: 50px;
 }
 #login-prompt a {
   text-decoration: inherit;
