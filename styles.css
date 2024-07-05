@@ -162,13 +162,6 @@ form input {
   font-weight: normal;
   font-style: normal;
 }
-/* @font-face {
-  font-family: "open_sansregular";
-  src: url("opensans-regular-webfont.woff2") format("woff2"),
-    url("opensans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-} */
 
 form label {
   display: block;
@@ -204,24 +197,6 @@ button {
   color: gray;
   font-weight: bold;
 }
-/* @font-face {
-  font-family: "robotoregular";
-  src: url("roboto-regular-webfont.woff2") format("woff2"),
-    url("roboto-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "ralewayregular";
-  src: url("raleway-regular-webfont.woff2") format("woff2"),
-    url("raleway-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-#login-prompt {
-  font-family: "ralewayregular";
-  font-weight: bold;
-} */
 
 /* now styles related to invalid and valid states are starting */
 input {
