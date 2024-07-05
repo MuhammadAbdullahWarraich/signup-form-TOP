@@ -120,6 +120,9 @@ main {
   gap: 25px;
   background-color: ghostwhite;
 }
+#replace-m1 {
+  display: none;
+}
 .motivation {
   font-weight: bold;
   font-size: 1.3em;
@@ -253,4 +256,12 @@ input:hover {
   right: 25px;
   bottom: 5px;
   font-size: 1.1em;
+}
+@media only screen and (max-width: 650px) {
+  #replace-m1 {
+    display: block;
+  }
+  #m1 {
+    display: none;
+  }
 }
