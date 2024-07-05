@@ -171,6 +171,11 @@ form label {
 }
 form {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#form-controls {
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
