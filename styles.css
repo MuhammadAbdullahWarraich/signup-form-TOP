@@ -150,16 +150,10 @@ form > p {
 }
 form input {
   width: 250px;
-  border: 1px solid gray;
+  border: 1px solid #e5e7eb;
   border-radius: 4px;
   font-size: 1.2em;
   padding: 4px;
-}
-form input:hover {
-  border: 1px solid black;
-}
-form input:focus {
-  border: 2px solid black;
 }
 @font-face {
   font-family: "open_sansbold";
@@ -191,12 +185,9 @@ form {
   margin-bottom: 20px;
   width: 300px;
 }
-/* * {
-  outline: 1px solid red;
-} */
 button {
   padding: 10px 40px;
-  background-color: darkgreen;
+  background-color: #596d48;
   color: white;
   font-weight: 550;
   letter-spacing: 1px;
@@ -233,11 +224,22 @@ button {
 } */
 
 /* now styles related to invalid and valid states are starting */
+input {
+  outline: none;
+}
 input:invalid {
-  outline: 1px solid red;
+  border: 1px solid red;
 }
 input:valid {
-  outline: 1px solid green;
+  border: 1px solid green;
+}
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 0 5px currentColor;
+}
+input:hover {
+  border: 1px solid black;
+  box-shadow: none;
 }
 /* now styles related to labeling required attribute are starting */
 .form-control {
