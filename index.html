@@ -55,6 +55,9 @@
                 pattern="([A-Za-z]+\s)*[A-Za-z]+"
                 required
               />
+              <p class="error-message">
+                alphabetical only with optional whitespace in b/w
+              </p>
             </div>
             <div class="form-control">
               <label for="last-name">LAST NAME</label>
@@ -66,6 +69,9 @@
                 pattern="([A-Za-z]+\s)*[A-Za-z]+"
                 required
               />
+              <p class="error-message">
+                alphabetical only with optional whitespace in b/w
+              </p>
             </div>
             <div class="form-control">
               <label for="email">EMAIL</label>
@@ -77,6 +83,7 @@
                 inputmode="email"
                 required
               />
+              <p class="error-message">domain@example</p>
             </div>
             <div class="form-control">
               <label for="phone-number">PHONE NUMBER</label>
@@ -87,6 +94,7 @@
                 inputmode="tel"
                 name="phone-number"
               />
+              <p class="error-message">numeric only</p>
             </div>
             <div class="form-control">
               <label for="password">PASSWORD</label>
@@ -99,6 +107,7 @@
                 maxlength="100"
                 required
               />
+              <p class="error-message">invalid input!</p>
               <!-- see this article for perspective on maxlength for passwords https://dev.to/mitchpommers/password-max-length-limits-are-dumb-but-we-need-them-1dpp -->
             </div>
             <div class="form-control">
@@ -112,6 +121,7 @@
                 maxlength="100"
                 required
               />
+              <p class="error-message">invalid input!</p>
             </div>
           </div>
         </form>

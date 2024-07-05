@@ -245,8 +245,8 @@ input:hover {
   content: "✓";
   color: green;
   position: absolute;
-  right: 25px;
-  bottom: 5px;
+  right: 20px;
+  top: 30px;
   font-size: 1.25em;
 }
 .form-control:has(> input:invalid) span::after {
@@ -254,7 +254,7 @@ input:hover {
   color: red;
   position: absolute;
   right: 25px;
-  bottom: 5px;
+  top: 30px;
   font-size: 1.1em;
 }
 /* @media only screen and (max-width: 650px) {
@@ -274,4 +274,14 @@ p.motivation {
 }
 .form-control:has(input:focus) {
   transform: scale(1.1);
+}
+/* display custom error messages */
+.error-message {
+  display: none;
+}
+.form-control:has(> input:invalid) p.error-message {
+  display: block;
+  color: red;
+  font-size: 0.8em;
+  padding: 4px 0px;
 }
