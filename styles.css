@@ -257,11 +257,14 @@ input:hover {
   bottom: 5px;
   font-size: 1.1em;
 }
-@media only screen and (max-width: 650px) {
+/* @media only screen and (max-width: 650px) {
   #replace-m1 {
     display: block;
   }
   #m1 {
     display: none;
   }
+} */
+p.motivation {
+  max-width: 80%;
 }
