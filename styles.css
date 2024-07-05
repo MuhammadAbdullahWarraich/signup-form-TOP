@@ -14,7 +14,7 @@
 }
 body {
   background-color: #222831; /* or black */
-  height: 100vh; /* height property is inherited by children */
+  min-height: 100vh; /* height property is inherited by children */
   display: flex;
   justify-content: center;
 }
@@ -39,7 +39,6 @@ main {
     height: fit-content;
   }
   .motivation {
-    margin-top: 50px;
     width: inherit;
     padding-right: 20px;
   }
@@ -124,8 +123,12 @@ main {
   display: none;
 }
 .motivation {
+  margin-top: 20px;
   font-weight: bold;
   font-size: 1.3em;
+}
+#m1 {
+  margin-top: 50px;
 }
 .motivation {
   width: 640px;
