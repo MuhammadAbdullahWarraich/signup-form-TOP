@@ -132,6 +132,12 @@ form input {
   font-size: 1.2em;
   padding: 4px;
 }
+form input:hover {
+  border: 1px solid black;
+}
+form input:focus {
+  border: 2px solid black;
+}
 @font-face {
   font-family: "open_sansbold";
   src: url("fonts/opensans-bold-webfont.woff2") format("woff2"),
@@ -224,7 +230,7 @@ input:valid {
   margin-bottom: 10px;
 }
 .form-control:has(> input:required) span::before {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
   content: "required";
   position: absolute;
@@ -233,3 +239,19 @@ input:valid {
   padding: 2px;
 }
 /* now styles related to tick or cross marks upon input validation are starting */
+.form-control:has(> input:valid) span::after {
+  content: "✓";
+  color: green;
+  position: absolute;
+  right: 25px;
+  bottom: 5px;
+  font-size: 1.25em;
+}
+.form-control:has(> input:invalid) span::after {
+  content: "✗";
+  color: red;
+  position: absolute;
+  right: 25px;
+  bottom: 5px;
+  font-size: 1.1em;
+}
